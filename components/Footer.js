@@ -9,7 +9,8 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <>
-            <div className="bg-gray-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+            <div className="bg-gray-50 h-1/2 w-full py-20">
+            <div className='container flex md:flex-row flex-col justify-between items-start mx-auto'>
                 <div className="p-5">
                     <img src="/images/logo.png" />
                 </div>
@@ -61,6 +62,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </ul>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center text-center p-5 bg-gray-900">

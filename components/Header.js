@@ -5,7 +5,8 @@ import Link from 'next/link';
 export const Navbar = () => {
     return (
         <>
-            <nav className='flex items-center flex-wraph-14 bg-gradient-to-r from-gray-800 via-violet-700 to-pink-600 p-3 '>
+            <nav className='bg-gradient-to-r from-gray-800 via-violet-700 to-pink-600 p-3 '>
+                <div className='container flex items-center flex-wraph-14 mx-auto'> 
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>
                         <span className='text-xl text-white font-bold uppercase tracking-wide'>
@@ -26,6 +27,7 @@ export const Navbar = () => {
                             </a>
                         </Link>
                     </div>
+                </div>
                 </div>
             </nav>
         </>
