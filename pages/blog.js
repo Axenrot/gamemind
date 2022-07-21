@@ -1,10 +1,10 @@
 import React from "react";
+import Header from '../components/Header';
+
 
 export const Blog = () => {
     return (
-        <p className="text-black-600 font-bold text-xl text-center">
-            Oops... Blog em construção.
-        </p>
+        <Header />
     );
 }
 
