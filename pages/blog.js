@@ -1,14 +1,15 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import React from 'react'
+
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 export const Blog = () => {
   return (
     <div>
-      <Header />
+      <Header currentPage="blog" />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default Blog;
+export default Blog
