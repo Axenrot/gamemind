@@ -3,7 +3,7 @@ import React from 'react'
 export const Banner = () => {
   return (
     <div className="banner p-3 py-16 bg-banner-gradient">
-      <div className="container flex md:flex-row flex-col justify-between items-start mx-auto">
+      <div className="container flex md:flex-row flex-col justify-between items-start mx-auto max-w-[1200px]">
         <div className="flex flex-row flex-wrap w-1/3 pt-40 mr-3.5 ml-3.5 box-border px-3.5">
           <h1 className="text-white text-4xl text-center font-semibold">
             Game Mind

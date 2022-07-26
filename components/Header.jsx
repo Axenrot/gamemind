@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const Header = ({ currentPage }) => {
   return (
     <nav className="header p-3 absolute left-0 top-0 w-full">
-      <div className="container flex justify-center items-center flex-wraph-14 mx-auto pl-5">
+      <div className="container flex justify-center items-center flex-wraph-14 mx-auto pl-5 max-w-[1200px]">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4">
             <span className="text-xl text-white font-bold uppercase tracking-wide">
