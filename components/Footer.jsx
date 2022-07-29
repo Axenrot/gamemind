@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer bg-gray-50 h-1/2 w-full py-20">
         <div className="container flex md:flex-row flex-col justify-between items-start mx-auto">
           <div className="p-5">
-            <img src="/images/logo.png" alt="image-logo" />
+            <img src="/images/logo2.png" alt="image-logo" />
           </div>
           <div className="p-5">
             <ul>

@@ -9,7 +9,7 @@ export const Header = ({ currentPage }) => {
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4">
             <span className="text-xl text-white font-bold uppercase tracking-wide">
-              <img src="/images/logo2.png" alt="Gamemind" />
+              <img src="/images/logo.png" alt="Gamemind" />
             </span>
           </a>
         </Link>
