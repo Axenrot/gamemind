@@ -33,10 +33,13 @@ module.exports = {
       backgroundImage: {
         'banner-gradient':
           'linear-gradient(101.4deg, #b74285 0%, #9E4290 30.65%, #6643aa 99.75%)'
+<<<<<<< HEAD
       },
       colors: {
         pinkbutton: '#b74284',
         purplebg: '#6543aa'
+=======
+>>>>>>> 22c06f084c77f0fddd6e32c728e3a799c8a3ced4
       }
     }
   }
