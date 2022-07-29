@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer bg-gray-50 h-1/2 w-full py-20">
-        <div className="container flex md:flex-row flex-col justify-between items-start mx-auto max-w-[1200px]">
+        <div className="container flex md:flex-row flex-col justify-between items-start mx-auto">
           <div className="p-5">
             <img src="/images/logo.png" alt="image-logo" />
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
               <p className="text-lg font-medium pb-6">
                 <span>Acompanhe nas redes:</span>
               </p>
-              <div className="flex gap-6 pb-5">
+              <div className="flex gap-6">
                 <div className="text-2x1 cursor-pointer hover:text-rose-400">
                   <a
                     href="https://www.instagram.com/gamemindstudios/"
@@ -81,8 +81,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center text-center p-5 bg-gray-900">
-        <h1 className="text-gray-50 font-semibold">
+      <div className="flex flex-col p-5 bg-gray-900 items-center">
+        <h1 className="text-white text-sm">
           Game Mind Studios © 2022 . Todos os direitos reservados.
         </h1>
       </div>
