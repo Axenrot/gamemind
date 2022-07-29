@@ -4,35 +4,18 @@ import Link from 'next/link'
 
 export const Header = ({ currentPage }) => {
   return (
-<<<<<<< HEAD
     <nav className="header p-3 absolute w-full">
       <div className="container flex items-center mx-auto">
-=======
-    /*NAVBAR*/
-    <nav className="header p-3 absolute w-full">
-      {/*CONTAINER for NAV ITEMS*/}
-      <div className="container flex items-center mx-auto">
-        {/*LOGO item*/}
->>>>>>> 22c06f084c77f0fddd6e32c728e3a799c8a3ced4
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4">
             <span className="text-xl text-white font-bold uppercase tracking-wide">
               <img src="/images/logo2.png" alt="Gamemind" />
             </span>
           </a>
-<<<<<<< HEAD
         </Link>
         <div className="sm:block ml-auto">
           <div className="w-full lg:h-auto">
             <Link href="/">
-=======
-        </Link>{/*end of LOGO*/}
-
-        {/*NAV MENU*/}
-        <div className=" sm:block ml-auto">
-          {/*INICIO*/}
-          <Link href="/"> 
->>>>>>> 22c06f084c77f0fddd6e32c728e3a799c8a3ced4
               <a
                 className={`w-full px-3 py-2 rounded text-white ${
                   currentPage == 'home' ? 'font-bold' : 'font-normal'
@@ -52,9 +35,10 @@ export const Header = ({ currentPage }) => {
                 Blog
               </a>
             </Link>
-        </div>{/*end of NAV MENU*/}
-      </div>{/*end of CONTAINER*/}
-    </nav>/*end of NAVBAR*/
+          </div>
+        </div>
+      </div>
+    </nav> /*end of NAVBAR*/
   )
 }
 
