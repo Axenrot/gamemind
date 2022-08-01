@@ -4,17 +4,15 @@ import Link from 'next/link'
 
 export const Header = ({ currentPage }) => {
   return (
-    <nav className="header p-3 absolute w-full">
+    <nav className="header-navbar p-3 absolute w-full">
       <div className="container flex items-center mx-auto">
         <Link href="/">
-          <a className="inline-flex items-center p-2 mr-4">
-            <span className="text-xl text-white font-bold uppercase tracking-wide">
-              <img src="/images/logo.png" alt="Gamemind" />
-            </span>
+          <a className=" p-2">
+            <img src="/images/logo.png" alt="logo-gamemind" />
           </a>
         </Link>
-        <div className="sm:block ml-auto">
-          <div className="w-full lg:h-auto">
+        <div className="ml-auto">
+          <div className="w-full">
             <Link href="/">
               <a
                 className={`w-full px-3 py-2 rounded text-white ${
@@ -24,8 +22,6 @@ export const Header = ({ currentPage }) => {
                 Início
               </a>
             </Link>
-
-            {/*BLOG*/}
             <Link href="/blog">
               <a
                 className={`lg:w-auto w-full px-3 py-2 rounded text-white ${
@@ -38,7 +34,7 @@ export const Header = ({ currentPage }) => {
           </div>
         </div>
       </div>
-    </nav> /*end of NAVBAR*/
+    </nav>
   )
 }
 
