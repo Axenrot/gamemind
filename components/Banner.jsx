@@ -16,7 +16,7 @@ export const Banner = () => {
             Matemática e Língua Portuguesa.
           </p>
           <Link href="/About">
-            <button className="text-white py-3 px-8 border-2 rounded-full cursor-pointer hover:text-pink-600 hover:bg-white">
+            <button className="text-white py-3 px-8 border-2 rounded-full cursor-pointer hover:text-pink hover:bg-white">
               Nossa história
             </button>
           </Link>
