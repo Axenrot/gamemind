@@ -5,6 +5,7 @@ import Avantasia from '../components/Avanstasia'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Partners from '../components/Partners'
 import SectionBlog from '../components/SectionBlog'
 
 export const Home = () => {
@@ -15,6 +16,7 @@ export const Home = () => {
       <About />
       <Avantasia />
       <SectionBlog />
+      <Partners />
       <Footer />
     </div>
   )
