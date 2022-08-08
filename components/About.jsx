@@ -2,7 +2,6 @@ import React from 'react'
 
 export const About = () => {
   return (
-    /*ABOUT US SECTION + container*/
     <div className="container mx-auto py-8 flex flex-col md:flex-row">
       <div className="py-8 w-full md:w-5/12 px-3 text-center sm:text-start">
         <h1 className="text-slate-800 text-4xl font-semibold">

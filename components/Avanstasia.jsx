@@ -2,10 +2,8 @@ import React from 'react'
 
 export const Avantasia = () => {
   return (
-    /*ABOUT US SECTION*/
     <div className="w-full bg-purplebg py-8">
       <div className="container mx-auto py-8 flex flex-wrap flex-col md:flex-row w-full items-center text-center sm:text-start">
-        {/*Block 1*/}
         <div className="w-full">
           <div className="ml-auto justify-center self-center w-full md:w-1/2 px-3 md:float-left my-auto">
             <img src="/images/avantasia2.png" alt="image-avantasia2" />
@@ -24,7 +22,6 @@ export const Avantasia = () => {
             </p>
           </div>
         </div>
-        {/*Block 2*/}
         <div className="w-full">
           <div className="ml-auto justify-center self-center w-full md:w-1/2 px-3 md:float-right">
             <img src="/images/course.png" alt="image-course" />
