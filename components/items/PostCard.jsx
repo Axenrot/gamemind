@@ -2,14 +2,14 @@ import React from 'react'
 
 import Link from 'next/link'
 
-export const PostCard = ({ id= '', image = ' ', title = ' ', text = ' ' }) => {
+export const PostCard = ({ id = '', img = ' ', title = ' ', text = ' ' }) => {
   return (
     <div className="w-full flex flex-wrap mb-8">
       <Link href=" ">
         <img
-          className="object-cover sm:h-24 sm:w-1/2 lg:w-1/3 rounded-xl shadow-lg mb-4"
-          src={image}
-          alt="image-blog-link"
+          className="object-cover sm:h-28 sm:w-1/2 lg:w-1/3 rounded-xl shadow-lg mb-4"
+          src={img}
+          alt={title}
         />
       </Link>
       <div className="sm:w-1/2 lg:w-2/3 sm:pl-2 text-base sm:text-xs md:text-sm lg:text-base">
