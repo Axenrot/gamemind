@@ -41,7 +41,7 @@ const Footer = () => {
                     href="https://www.instagram.com/gamemindstudios/"
                     target="blank"
                   >
-                    <FaInstagram icon={FaInstagram} />
+                    <FaInstagram />
                   </a>
                 </div>
                 <div className="text-2x1 cursor-pointer hover:text-rose-400">
@@ -49,7 +49,7 @@ const Footer = () => {
                     href="https://www.facebook.com/gamemindstudios"
                     target="blank"
                   >
-                    <FaFacebook icon={FaFacebook} />
+                    <FaFacebook />
                   </a>
                 </div>
                 <div
@@ -57,7 +57,7 @@ const Footer = () => {
                   target="blank"
                 >
                   <a href="https://twitter.com/gamemindstudios" target="blank">
-                    <FaTwitter icon={FaTwitter} />
+                    <FaTwitter />
                   </a>
                 </div>
                 <div className="text-2x1 cursor-pointer hover:text-rose-400">
@@ -65,7 +65,7 @@ const Footer = () => {
                     href="https://www.linkedin.com/company/gamemindstudios/"
                     target="blank"
                   >
-                    <FaLinkedin icon={FaLinkedin} />
+                    <FaLinkedin />
                   </a>
                 </div>
                 <div className="text-2x1 cursor-pointer hover:text-rose-400">
@@ -73,7 +73,7 @@ const Footer = () => {
                     href="https://www.youtube.com/channel/UC2cSWokWK75CddMPvV58B4g"
                     target="blank"
                   >
-                    <FaYoutube icon={FaYoutube} />
+                    <FaYoutube />
                   </a>
                 </div>
               </div>
