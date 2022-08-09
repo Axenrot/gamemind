@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const FeaturedPostCard = () => {
   return (
     <div className="">
-      <div className="w-full px-4 sm:pl-8 mb-8">
+      <div className="w-full mb-8">
         <Link href="/blog">
           <>
             <img

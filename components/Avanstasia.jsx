@@ -3,12 +3,12 @@ import React from 'react'
 export const Avantasia = () => {
   return (
     <div className="w-full bg-purplebg py-8">
-      <div className="container mx-auto py-8 flex flex-wrap flex-col md:flex-row w-full items-center text-center sm:text-start">
+      <div className="container mx-auto py-8 px-3 flex flex-wrap flex-col md:flex-row w-full items-center text-center sm:text-start">
         <div className="w-full">
-          <div className="ml-auto justify-center self-center w-full md:w-1/2 px-3 md:float-left my-auto">
+          <div className="ml-auto justify-center self-center w-full md:w-1/2  md:float-left my-auto">
             <img src="/images/avantasia2.png" alt="image-avantasia2" />
           </div>
-          <div className="py-8 w-full text-center md:w-5/12 px-3 md:float-right">
+          <div className="py-8 w-full text-center md:w-5/12 md:float-right">
             <h2 className="text-white text-3xl font-semibold">
               Exploradores de Avantasia
             </h2>
@@ -23,10 +23,10 @@ export const Avantasia = () => {
           </div>
         </div>
         <div className="w-full">
-          <div className="ml-auto justify-center self-center w-full md:w-1/2 px-3 md:float-right">
+          <div className="ml-auto justify-center self-center w-full md:w-1/2 md:float-right">
             <img src="/images/course.png" alt="image-course" />
           </div>
-          <div className="py-8 w-full md:w-5/12 px-3 md:float-left">
+          <div className="py-8 w-full md:w-5/12 md:float-left">
             <h1 className="text-white text-3xl font-semibold">
               Canva para Educadores: Produza recursos didáticos com o Canva
             </h1>
