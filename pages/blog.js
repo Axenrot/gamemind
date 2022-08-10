@@ -3,7 +3,7 @@ import React from 'react'
 import Footer from '../components/layout/Footer'
 import Header from '../components/layout/Header'
 
-export const Home = () => {
+export const Blog = () => {
   return (
     <div>
       <Header currentPage="home" />
@@ -13,4 +13,4 @@ export const Home = () => {
   )
 }
 
-export default Home
+export default Blog
