@@ -101,6 +101,76 @@ const Post = () => {
           plataforma também possui versões mobile para Android e iOS (iPhone)
           além de um aplicativo desktop para Windows (PC) e macOS.
         </p>
+        <h2>Como gravar e disponibilizar videoaulas com o Canva</h2>
+        <p>Passo 1. Faça login com a sua conta na plataforma;</p>
+        <p>Passo 2. Crie a apresentação de slides que deseja gravar;</p>
+        <p>
+          Passo 3. Na tela de edição da apresentação clique em “Compartilhar” e
+          depois em “Mais”;
+        </p>
+        <div className="py-4">
+          <img src="/images/post1.png" alt="post1" />
+        </div>
+        <p>Passo 4. Em seguida clique na opção “Apresentar e Gravar”;</p>
+        <div className="py-4">
+          <img src="/images/post2.png" alt="post1" />
+        </div>
+        <p>Passo 5. Selecione “Ir ao estúdio de gravação”;</p>
+        <div className="py-4">
+          <img src="/images/post3.png" alt="post1" />
+        </div>
+        <p>
+          Passo 6. Ao fazer isso, o Canva irá solicitar permissão para acessar o
+          microfone e câmera disponível;
+        </p>
+        <div className="py-4">
+          <img src="/images/post4.png" alt="post1" />
+        </div>
+        <p>
+          Passo 7. Na tela de configuração da câmera e do microfone, selecione
+          qual ferramenta quer utilizar; depois, basta clicar em “Iniciar
+          gravação” que, logo após a contagem regressiva, você poderá iniciar a
+          apresentação;
+        </p>
+        <div className="py-4">
+          <img src="/images/post5.png" alt="post1" />
+        </div>
+        <p>
+          Passo 8. Caso deseje, você também pode “Pausar” a gravação e depois
+          “Continuar” de onde parou;
+        </p>
+        <div className="py-4">
+          <img src="/images/post6.png" alt="post1" />
+        </div>
+        <div className="py-4">
+          <img src="/images/post7.png" alt="post1" />
+        </div>
+        <p>
+          Passo 9. Quando finalizar a apresentação, basta clicar em “Finalizar a
+          gravação” que o Canva fará o upload do arquivo na sua própria
+          plataforma;
+        </p>
+        <div className="py-4">
+          <img src="/images/post8.png" alt="post1" />
+        </div>
+        <p>
+          Passo 10. O Canva gerará um link de compartilhamento o qual poderá ser
+          compartilhado com os alunos. Você também pode “Descartar” a gravação,
+          excluindo-a ou pode “Salvar e Sair” do estúdio, voltando para a tela
+          de edição. Ainda, a ferramenta disponibiliza a opção de “Baixar” a
+          gravação para salvá-la em seu computador;
+        </p>
+        <div className="py-4">
+          <img src="/images/post9.png" alt="post1" />
+        </div>
+        <p>
+          Ao abrir o link de compartilhamento, os alunos terão acesso ao vídeo
+          gravado podendo assistir ao conteúdo disponibilizado.
+        </p>
+        <p>
+          Prontinho! Muito simples, não é mesmo? Agora gravar e compartilhar as
+          suas aulas ficou muito mais fácil!
+        </p>
       </div>
     </div>
   )
