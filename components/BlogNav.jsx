@@ -1,9 +1,11 @@
 import { FaSearch } from 'react-icons/fa'
 
+import posts from '../public/posts'
+
 const BlogNav = () => {
   let title = 'Blog da Game Mind'
-  function btnHandler(name) {
-    console.log(name)
+  const btnHandler = category => {
+    console.log(category)
   }
 
   return (
@@ -13,13 +15,14 @@ const BlogNav = () => {
         <h4 className="self-center mr-2 text-sm font-semibold">Navegue por:</h4>
         <button
           className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('todos')}
+          onClick={() => btnHandler('Todos')}
+          name="Todos"
         >
           Todos
         </button>
         <button
           className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('educacao')}
+          onClick={() => btnHandler('Educação')}
         >
           Educação
         </button>

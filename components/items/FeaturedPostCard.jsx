@@ -6,8 +6,8 @@ export const FeaturedPostCard = () => {
   return (
     <div className="">
       <div className="w-full mb-8">
-        <Link href="/blog">
-          <div>
+        <Link href="/blog/1" passHref>
+          <a>
             <img
               className="rounded-xl w-full"
               src="/images/blog-section.jpg"
@@ -19,7 +19,7 @@ export const FeaturedPostCard = () => {
               </h3>
               <p className="text-blue-900 font-semibold">Leia Mais</p>
             </div>
-          </div>
+          </a>
         </Link>
       </div>
     </div>

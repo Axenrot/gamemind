@@ -1,8 +1,9 @@
 import React from 'react'
 
+import posts from '../public/posts'
+
 import FeaturedPostCard from './items/FeaturedPostCard'
 import PostCard from './items/PostCard'
-import posts from './objects/Posts'
 
 export const BlogSection = ({ expand = false }) => {
   const posts3 = posts.slice(0, 3)

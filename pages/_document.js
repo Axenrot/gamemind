@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+import posts from '../public/posts'
+
 class MyDocument extends Document {
   render() {
     return (

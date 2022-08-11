@@ -1,7 +1,9 @@
-import { useRouter } from 'next/router'
 import React from 'react'
-import Header from '../../components/layout/Header'
+
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+import Header from '../../components/layout/Header'
 
 const post = {
   id: 'como-gravar-e-disponibilizar-videoaulas-utilizando-o-canva',
