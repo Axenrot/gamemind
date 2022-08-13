@@ -64,16 +64,20 @@ const BlogNav = () => {
         </button>
       </div>
 
-      <div className="flex my-8">
-        <h1 className="text-xl font-semibold text-slateblue w-fit">{title}</h1>
-        <input
-          className="border border-slateblue border-r-0 outline-1 outline-lightpink outline-offset-2 rounded-l ml-auto py-1 px-3 placeholder:text-bluegray"
-          type="text"
-          placeholder="Pesquisar por..."
-        />
-        <button className="border border-slateblue rounded-r px-3 hover:bg-pink hover:text-white hover:border-pink">
-          <FaSearch />
-        </button>
+      <div className="flex flex-wrap my-8">
+        <h1 className="text-xl font-semibold text-slateblue w-fit mb-4 md:mb-0">
+          {title}
+        </h1>
+        <div className="ml-auto flex w-full md:w-fit">
+          <input
+            className="w-full md:w-80 border border-slateblue border-r-0 outline-1 outline-lightpink outline-offset-2 rounded-l ml-auto py-1 px-3 placeholder:text-bluegray"
+            type="text"
+            placeholder="Pesquisar por..."
+          />
+          <button className="border border-slateblue rounded-r px-3 hover:bg-pink hover:text-white hover:border-pink">
+            <FaSearch />
+          </button>
+        </div>
       </div>
     </div>
   )

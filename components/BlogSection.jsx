@@ -33,8 +33,11 @@ export const BlogSection = ({ expand = false }) => {
           ))}
         </div>
       </div>
-      <div className="flex flex-row">
-        {expand && posts5.map(post => <PostCard key={post.id} {...post} />)}
+      <div className="flex flex-col sm:flex-row">
+        {expand &&
+          posts5.map(post => (
+            <PostCard expand={expand} key={post.id} {...post} />
+          ))}
       </div>
     </div>
   )
