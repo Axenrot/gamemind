@@ -2,6 +2,7 @@ import React from 'react'
 
 import posts from '../public/posts'
 
+import BannerCard from './items/BannerCard'
 import FeaturedPostCard from './items/FeaturedPostCard'
 import PostCard from './items/PostCard'
 
@@ -33,11 +34,12 @@ export const BlogSection = ({ expand = false }) => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row mb-8">
         {expand &&
           posts5.map(post => (
             <PostCard expand={expand} key={post.id} {...post} />
           ))}
+        {expand && <BannerCard />}
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import BlogNav from '../components/BlogNav'
 import BlogSection from '../components/BlogSection'
 import Footer from '../components/layout/Footer'
 import Header from '../components/layout/Header'
+import Partners from '../components/layout/Partners'
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
       </div>
       <BlogNav />
       <BlogSection expand={true} />
+      <Partners />
       <Footer />
     </div>
   )

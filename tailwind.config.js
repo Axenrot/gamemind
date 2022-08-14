@@ -38,6 +38,7 @@ module.exports = {
       colors: {
         pinkbutton: '#b74284',
         purplebg: '#6543aa',
+        purplebg2: '#6643aa',
         gray: '#e3e3f1',
         bluegray: '#7686a6',
         pink: '#b74285',

@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const FeaturedPostCard = () => {
   return (
     <div className="">
-      <div className="w-full mb-8">
+      <div className="w-full mb-3">
         <Link href="/blog/1" passHref>
           <a>
             <img
@@ -17,7 +17,7 @@ export const FeaturedPostCard = () => {
               <h3 className="font-bold text-base tracking-wide mb-2 text-slate-800">
                 Como gravar e disponibilizar videoaulas utilizando o Canva
               </h3>
-              <p className="text-blue-900 font-semibold">Leia Mais</p>
+              <p className="opacity-80 font-semibold">Leia Mais</p>
             </div>
           </a>
         </Link>

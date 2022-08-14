@@ -14,50 +14,50 @@ const BlogNav = () => {
       <div className="flex flex-wrap">
         <h4 className="self-center mr-2 text-sm font-semibold">Navegue por:</h4>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('Todos')}
           name="Todos"
         >
           Todos
         </button>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('Educação')}
         >
           Educação
         </button>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('tecnologia')}
         >
           Tecnologia
         </button>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('games')}
         >
           Games
         </button>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('metodologia')}
         >
           Metodologia
         </button>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('desenvolvimento')}
         >
           Desenvolvimento
         </button>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('inovacao')}
         >
           Inovacao
         </button>
         <button
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
           onClick={() => btnHandler('canva')}
         >
           Canva
