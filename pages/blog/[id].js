@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import Header from '../../components/layout/Header'
+import AuthorDescription from '../../components/AuthorDescription'
 
 const post = {
   id: 'como-gravar-e-disponibilizar-videoaulas-utilizando-o-canva',
@@ -171,6 +172,9 @@ const Post = () => {
           Prontinho! Muito simples, não é mesmo? Agora gravar e compartilhar as
           suas aulas ficou muito mais fácil!
         </p>
+        <div className="py-20">
+          <AuthorDescription />
+        </div>
       </div>
     </div>
   )
