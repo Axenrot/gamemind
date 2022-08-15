@@ -5,6 +5,8 @@ import { useRouter } from 'next/router'
 
 import Header from '../../components/layout/Header'
 import AuthorDescription from '../../components/AuthorDescription'
+import { Tags } from '../../components/Tags'
+import Share from '../../components/Share'
 
 const post = {
   id: 'como-gravar-e-disponibilizar-videoaulas-utilizando-o-canva',
@@ -168,11 +170,16 @@ const Post = () => {
           Ao abrir o link de compartilhamento, os alunos terão acesso ao vídeo
           gravado podendo assistir ao conteúdo disponibilizado.
         </p>
-        <p>
+        <p className="pb-12">
           Prontinho! Muito simples, não é mesmo? Agora gravar e compartilhar as
           suas aulas ficou muito mais fácil!
         </p>
-        <div className="py-20">
+        <hr className="text-slate-200"></hr>
+        <div className="container flex flex-wrap pt-6">
+          <Tags />
+          <Share />
+        </div>
+        <div className="py-12">
           <AuthorDescription />
         </div>
       </div>

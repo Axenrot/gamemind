@@ -2,9 +2,9 @@ import React from 'react'
 
 export const AuthorDescription = () => {
   return (
-    <div className="container flex flex-wrap sm:flex-nowrap bg-pink py-7 rounded-xl mx-auto sm:w-full shadow-xl">
+    <div className="container flex flex-wrap sm:flex-nowrap bg-pink py-7 rounded-xl mx-auto sm:w-full shadow-xl place-content-center">
       <img
-        className="w-48 h-48 rounded-full ml-4 sm:ml-10"
+        className="w-48 h-48 rounded-full sm:ml-10"
         src="/images/author.png"
         alt="author-img"
       />
