@@ -7,6 +7,8 @@ import Header from '../../components/layout/Header'
 import AuthorDescription from '../../components/AuthorDescription'
 import { Tags } from '../../components/Tags'
 import Share from '../../components/Share'
+import Partners from '../../components/layout/Partners'
+import Footer from '../../components/layout/Footer'
 
 const post = {
   id: 'como-gravar-e-disponibilizar-videoaulas-utilizando-o-canva',
@@ -181,6 +183,10 @@ const Post = () => {
         </div>
         <div className="py-12">
           <AuthorDescription />
+          <div className="mx-auto py-10">
+            <Partners />
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
