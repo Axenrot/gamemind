@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-      font-family: 'Poppins', sans-serif;
-    }
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
 
-    p {
-      padding: 6px 0; 
-      line-height: 1.65rem;
-      letter-spacing: 0.025em;
-      color: #212d46;
-    }
+  p {
+    padding: 6px 0;
+    line-height: 1.65rem;
+    letter-spacing: 0.025em;
+    color: #212d46;
+  }
 
-    h2 {
-      color: #212d46;
-      font-size: 1.5rem;
-      line-height: 1.75rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-    }
+  h2 {
+    color: #212d46;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 }
 
-
+.btn-primary {
+  @apply transition-all ease-in-out duration-300 text-white py-3 px-8 border-2 rounded-full cursor-pointer hover:bg-white hover:text-pink border-white;
+}

@@ -1,21 +1,9 @@
 import React, { useRef } from 'react'
 
-import gsap from 'gsap'
 import Link from 'next/dist/client/link'
 
 export const Banner = () => {
-  const imagem = useRef()
-
-  function onEnter({ currentTarget }) {
-    gsap.to(currentTarget, { color: '#b74185', backgroundColor: '#fff' })
-  }
-  function onLeave({ currentTarget }) {
-    gsap.to(currentTarget, {
-      color: '#fff',
-      borderColor: '#fff',
-      background: 'none'
-    })
-  }
+  const image = useRef()
 
   return (
     <div className="banner py-8 bg-banner-gradient w-full">
@@ -28,22 +16,15 @@ export const Banner = () => {
             Plataforma Online de Jogos Digitais Inovadores para Aprendizagem de
             Matemática e Língua Portuguesa.
           </p>
-          <Link href="/About">
-            <button
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
-              className="text-white py-3 px-8 border-2 rounded-full cursor-pointer"
-            >
-              Nossa história
-            </button>
+          <Link href="/sobre">
+            <button className="btn-primary">Nossa história</button>
           </Link>
         </div>
-
         <div className="w-full sm:w-1/2">
           <img
-            ref={imagem}
+            ref={image}
             className="w-full"
-            alt="image-banner"
+            alt=""
             src="/images/avantasia.png"
           />
         </div>
