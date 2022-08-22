@@ -24,6 +24,12 @@
   }
 }
 
+.btn-outline {
+  @apply transition-all duration-300 text-white py-3 px-8 border-2 rounded-full cursor-pointer hover:bg-white hover:text-pink border-white shadow-xl;
+}
 .btn-primary {
-  @apply transition-all ease-in-out duration-300 text-white py-3 px-8 border-2 rounded-full cursor-pointer hover:bg-white hover:text-pink border-white;
+  @apply transition-all duration-300 text-white bg-pinkbutton border-pinkbutton hover:bg-white hover:text-pink border-2 rounded-full px-8 py-3;
+}
+.btn-nav {
+  @apply transition-all duration-300 text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md;
 }

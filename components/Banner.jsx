@@ -14,7 +14,7 @@ export const Banner = ({ title, description, cta, imageURL }) => {
             {description}
           </p>
           <Link href={cta.href} passHref>
-            <button className="btn-primary">{cta.title}</button>
+            <button className="btn-outline">{cta.title}</button>
           </Link>
         </div>
         <div className="w-full sm:w-1/2">
