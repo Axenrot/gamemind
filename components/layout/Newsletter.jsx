@@ -1,4 +1,5 @@
 import React from 'react'
+
 import gsap from 'gsap'
 
 export const Newsletter = () => {
@@ -8,7 +9,7 @@ export const Newsletter = () => {
   function onLeave({ currentTarget }) {
     gsap.to(currentTarget, {
       color: '#fff',
-      borderColor: '#b74284',
+      borderColor: '#fff',
       background: '#b74284'
     })
   }
@@ -24,10 +25,11 @@ export const Newsletter = () => {
           type="text"
           placeholder="Digite seu melhor e-mail"
         />
-        <button 
-        onMouseEnter={onEnter}
-        onMouseLeave={onLeave}
-        className="sm:w-56 xl:w-1/3 text-white bg-pink border-white border-2 rounded-full px-8 py-3 shadow-xl">
+        <button
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}
+          className="sm:w-56 xl:w-1/3 text-white bg-pink border-white border-2 rounded-full px-8 py-3 shadow-xl"
+        >
           Inscreva-se
         </button>
       </div>

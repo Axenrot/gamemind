@@ -3,12 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import Header from '../../components/layout/Header'
 import AuthorDescription from '../../components/AuthorDescription'
-import { Tags } from '../../components/Tags'
 import Share from '../../components/Share'
-import Partners from '../../components/layout/Partners'
+import { Tags } from '../../components/Tags'
 import Footer from '../../components/layout/Footer'
+import Header from '../../components/layout/Header'
+import Partners from '../../components/layout/Partners'
 
 const post = {
   id: 'como-gravar-e-disponibilizar-videoaulas-utilizando-o-canva',
