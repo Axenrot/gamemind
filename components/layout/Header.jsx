@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useRef } from 'react'
 
 import { gsap } from 'gsap'
@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export const Header = ({ currentPage }) => {
   const navbar = useRef()
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.fromTo(
       navbar.current,
       { opacity: 0, y: -60 },
