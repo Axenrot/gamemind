@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
+import gsap from 'gsap'
 import Link from 'next/dist/client/link'
 
 export const Banner = () => {
+  const imagem = useRef()
+
+  function onEnter({ currentTarget }) {
+    gsap.to(currentTarget, { color: '#b74185', backgroundColor: '#fff' })
+  }
+  function onLeave({ currentTarget }) {
+    gsap.to(currentTarget, {
+      color: '#fff',
+      borderColor: '#fff',
+      background: 'none'
+    })
+  }
+
   return (
     <div className="banner py-8 bg-banner-gradient w-full">
       <div className="container flex sm:flex-row flex-col justify-between items-center mx-auto">
@@ -15,7 +29,11 @@ export const Banner = () => {
             Matemática e Língua Portuguesa.
           </p>
           <Link href="/About">
-            <button className="text-white py-3 px-8 border-2 rounded-full cursor-pointer hover:text-pink hover:bg-white">
+            <button
+              onMouseEnter={onEnter}
+              onMouseLeave={onLeave}
+              className="text-white py-3 px-8 border-2 rounded-full cursor-pointer"
+            >
               Nossa história
             </button>
           </Link>
@@ -23,6 +41,7 @@ export const Banner = () => {
 
         <div className="w-full sm:w-1/2">
           <img
+            ref={imagem}
             className="w-full"
             alt="image-banner"
             src="/images/avantasia.png"

@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
+import { useRef } from 'react'
 
+import { gsap } from 'gsap'
 import Link from 'next/link'
 
 export const Header = ({ currentPage }) => {
+  const navbar = useRef()
+  useLayoutEffect(() => {
+    gsap.fromTo(
+      navbar.current,
+      { opacity: 0, y: -60 },
+      { opacity: 1, y: 0, duration: 3 }
+    )
+  })
+
   return (
-    <nav className="header-navbar p-3 absolute w-full">
+    <nav ref={navbar} className="header-navbar p-3 absolute w-full">
       <div className="container flex items-center mx-auto">
         <Link href="/">
           <a className=" p-2">
