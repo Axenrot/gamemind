@@ -1,25 +1,18 @@
+import Link from 'next/link'
 import React from 'react'
 
-export const About = () => {
+export const About = ({ title, description, cta, imageURL }) => {
   return (
     <div className="container mx-auto py-8 flex flex-col md:flex-row">
       <div className="py-8 w-full md:w-5/12 px-3 text-center sm:text-start">
-        <h1 className="text-slate-800 text-4xl font-semibold">
-          Game Mind Studios: Quem Somos
-        </h1>
-        <p className="text-gray-500 my-6">
-          A Game Mind é uma spin-off acadêmica constituída em 2020 a partir de
-          projetos de pesquisa e mestrado desenvolvidos no Instituto Metrópole
-          Digital (IMD) da UFRN. Fazendo parte do setor de EdTechs, nos
-          consideramos um estúdio de games especialista em educação. Nosso
-          principal produto (em desenvolvimento) é uma plataforma online de
-          jogos digitais inovadores que visa criar uma nova cultura de inovação
-          nas escolas.
-        </p>
-        <button className="btn-primary">Saiba mais</button>
+        <h1 className="text-slate-800 text-4xl font-semibold">{title}</h1>
+        <p className="text-gray-500 my-6">{description}</p>
+        <Link href={cta.href} passHref>
+          <a className="btn-primary">{cta.title}</a>
+        </Link>
       </div>
       <div className="ml-auto justify-center self-center w-full md:w-1/2 px-3">
-        <img src="/images/about.png" alt="" />
+        <img src={imageURL} alt="" />
       </div>
     </div>
   )

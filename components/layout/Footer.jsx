@@ -15,21 +15,7 @@ const Footer = () => {
           <div className="p-5">
             <img src="/images/logo2.png" alt="image-logo" />
           </div>
-          <div className="p-5">
-            <ul>
-              <h3 className="text-lg font-medium pb-6">Navegue</h3>
-              <Link href="/">
-                <li className="text-gray-500 text-md pb-2 font-semibold hover:text-pink cursor-pointer">
-                  Início
-                </li>
-              </Link>
-              <Link href="/blog">
-                <li className="text-gray-500 text-md pb-2 font-semibold hover:text-pink cursor-pointer">
-                  Blog
-                </li>
-              </Link>
-            </ul>
-          </div>
+
           <div className="p-5">
             <ul>
               <p className="text-lg font-medium pb-6">

@@ -40,7 +40,7 @@ const Post = () => {
           <div className="flex flex-row flex-wrap w-full sm:w-7/12 md:w-1/2 lg:w-1/3 pt-10 box-border px-3.5 self-center text-center sm:text-left justify-center sm:justify-start">
             <Link href="/blog/tecnologia">
               <div>
-                <button className="text-white border-2 cursor-pointer hover:text-pink hover:bg-white font-base rounded-lg text-sm px-4 py-1 text-center mr-2 mb-2">
+                <button className="transition-all duration-300 text-white border-2 cursor-pointer hover:text-pink hover:bg-white font-base rounded-lg text-sm px-4 py-1 text-center mr-2 mb-2">
                   {post.category}
                 </button>
               </div>
@@ -72,23 +72,21 @@ const Post = () => {
         </div>
       </div>
       <div className="container mx-auto justify-center px-3 py-12">
-        <div className="mb-8">{post.content}</div>
+        <div className="mb-8 text-center sm:text-start">{post.content}</div>
         <hr className="text-slate-200"></hr>
-        <div className="container flex flex-wrap pt-6">
+        <div className="container flex flex-wrap">
           <Tags tags={post.tags} />
           <Share />
         </div>
-        <div className="py-12">
+        <div className="pt-12">
           <AuthorDescription
             name={post.author.name}
             description={post.author.description}
           />
-          <div className="mx-auto py-10">
-            <Partners />
-            <Footer />
-          </div>
         </div>
       </div>
+      <Partners />
+      <Footer />
     </div>
   )
 }

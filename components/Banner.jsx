@@ -18,7 +18,7 @@ export const Banner = ({ title, description, cta, imageURL }) => {
           </Link>
         </div>
         <div className="w-full sm:w-1/2">
-          <img className="w-full" alt="" src="/images/avantasia.png" />
+          <img className="w-full" alt="" src={imageURL} />
         </div>
       </div>
     </div>
