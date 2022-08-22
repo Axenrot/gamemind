@@ -75,11 +75,14 @@ const Post = () => {
         <div className="mb-8">{post.content}</div>
         <hr className="text-slate-200"></hr>
         <div className="container flex flex-wrap pt-6">
-          <Tags />
+          <Tags tags={post.tags} />
           <Share />
         </div>
         <div className="py-12">
-          <AuthorDescription />
+          <AuthorDescription
+            name={post.author.name}
+            description={post.author.description}
+          />
           <div className="mx-auto py-10">
             <Partners />
             <Footer />
