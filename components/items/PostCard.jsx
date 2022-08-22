@@ -1,26 +1,15 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 
-import gsap from 'gsap'
 import Link from 'next/link'
 
 export const PostCard = ({ img, title, text, expand }) => {
-  const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, { scale: 1.1 })
-  }
-
-  const onLeave = ({ currentTarget }) => {
-    gsap.to(currentTarget, { scale: 1 })
-  }
-
   const defaultPostCard = (
     <div className="w-full flex flex-wrap mb-8">
       <Link href="" passHref>
         <a className="w-full flex flex-col sm:flex-row">
           <div className="overflow-hidden h-fit sm:w-1/2 lg:w-1/3 rounded-t-md sm:rounded-md shadow-lg mb-4">
             <img
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
-              className="w-full"
+              className="transition-all duration-500 hover:scale-110 w-full"
               src={img}
               alt={title}
             />
@@ -46,9 +35,7 @@ export const PostCard = ({ img, title, text, expand }) => {
         <a className="w-full flex flex-col">
           <div className="rounded-t-md h-fit overflow-hidden">
             <img
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
-              className="w-full"
+              className="transition-all duration-500 hover:scale-110 w-full"
               src={img}
               alt={title}
             />

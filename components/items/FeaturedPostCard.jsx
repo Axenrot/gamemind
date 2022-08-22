@@ -1,26 +1,15 @@
 import React from 'react'
 
-import gsap from 'gsap'
 import Link from 'next/link'
 
 export const FeaturedPostCard = () => {
-  function onEnter({ currentTarget }) {
-    gsap.to(currentTarget, { scale: 1.1 })
-  }
-
-  function onLeave({ currentTarget }) {
-    gsap.to(currentTarget, { scale: 1 })
-  }
-
   return (
     <div className="w-full mb-3">
       <Link href="/blog/1" passHref>
         <a>
           <div className="rounded-xl w-full h-max overflow-hidden">
             <img
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
-              className="w-full"
+              className="transition-all duration-500 hover:scale-110 w-full"
               src="/images/blog-section.jpg"
               alt="blog-section"
             />

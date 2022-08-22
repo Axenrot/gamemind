@@ -1,19 +1,9 @@
-import gsap from 'gsap'
 import { FaSearch } from 'react-icons/fa'
 
-import posts from '../public/posts'
-
-const BlogNav = () => {
+const BlogNav = ({ categories }) => {
   let title = 'Blog da Game Mind'
   const btnHandler = category => {
     console.log(category)
-  }
-
-  function onEnter({ currentTarget }) {
-    gsap.to(currentTarget, { backgroundColor: '#6643aa' })
-  }
-  function onLeave({ currentTarget }) {
-    gsap.to(currentTarget, { backgroundColor: '#b74185' })
   }
 
   return (
@@ -21,69 +11,37 @@ const BlogNav = () => {
       {/*buttons*/}
       <div className="flex flex-wrap">
         <h4 className="self-center mr-2 text-sm font-semibold">Navegue por:</h4>
-        <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('Todos')}
-          name="Todos"
-        >
+
+        {/*categories.map((category)=>{
+          return <button className="btn-nav" onClick={() => btnHandler({category})}>
+          {category}
+        </button>
+        })*/}
+        <button className="btn-nav" onClick={() => btnHandler('Todos')}>
           Todos
         </button>
-        <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('Educação')}
-        >
+        <button className="btn-nav" onClick={() => btnHandler('Educação')}>
           Educação
         </button>
-        <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('tecnologia')}
-        >
+        <button className="btn-nav" onClick={() => btnHandler('tecnologia')}>
           Tecnologia
         </button>
-        <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('games')}
-        >
+        <button className="btn-nav" onClick={() => btnHandler('games')}>
           Games
         </button>
-        <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('metodologia')}
-        >
+        <button className="btn-nav" onClick={() => btnHandler('metodologia')}>
           Metodologia
         </button>
         <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
+          className="btn-nav"
           onClick={() => btnHandler('desenvolvimento')}
         >
           Desenvolvimento
         </button>
-        <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('inovacao')}
-        >
+        <button className="btn-nav" onClick={() => btnHandler('inovacao')}>
           Inovacao
         </button>
-        <button
-          onMouseEnter={onEnter}
-          onMouseLeave={onLeave}
-          className="text-sm bg-pinkbutton2 shadow-xl text-white py-2 px-3 m-1 rounded-md"
-          onClick={() => btnHandler('canva')}
-        >
+        <button className="btn-nav" onClick={() => btnHandler('canva')}>
           Canva
         </button>
       </div>

@@ -17,7 +17,7 @@ export const Banner = () => {
             Matemática e Língua Portuguesa.
           </p>
           <Link href="/sobre">
-            <button className="btn-primary">Nossa história</button>
+            <button className="btn-outline">Nossa história</button>
           </Link>
         </div>
         <div className="w-full sm:w-1/2">
