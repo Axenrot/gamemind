@@ -15,7 +15,7 @@ export const Header = ({ currentPage }) => {
   })
 
   return (
-    <nav ref={navbar} className="header-navbar p-3 absolute w-full">
+    <nav ref={navbar} className="header-navbar p-3 absolute z-40 w-full">
       <div className="container flex items-center mx-auto">
         <Link href="/">
           <a className=" p-2">
