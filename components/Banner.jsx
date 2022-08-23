@@ -58,13 +58,14 @@ export const Banner = ({ title, description, cta, imageURL }) => {
           alt="image-banner"
           src="/images/angle-2.png"
         />
+        <div className="w-[12vw] h-[12vw] absolute border-2 border-white rounded-full bottom-[-7vw] left-[35%]" />
         <div
           ref={circlearm}
           className="h-0 w-0 absolute -z-40 right-[45%] bottom-[0%]"
         >
           <div
             ref={bigcircle}
-            className="relative bg-white opacity-20 w-[80vw] h-[80vw] right-[40vw] bottom-[60vh] -z-40  rounded-full"
+            className="relative bg-white opacity-10 w-[80vw] h-[80vw] right-[40vw] bottom-[60vh] -z-40  rounded-full"
           />
         </div>
       </div>
