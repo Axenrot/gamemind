@@ -52,7 +52,7 @@ export const Banner = ({ title, description, cta, imageURL }) => {
   return (
     <div className="relative flex banner w-full overflow-hidden h-[100vh]">
       <div className="bg-banner-gradient absolute w-full h-full -z-40" />
-      <div animatedComponents>
+      <div id="animatedcomponents">
         <img
           ref={angle}
           className="absolute left-[8%] -bottom-[10%] -z-20 self-end hidden md:block md:scale-125"

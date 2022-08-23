@@ -44,6 +44,7 @@ module.exports = {
         pink: '#b74285',
         pinkbutton2: '#b74185',
         slateblue: '#202d46',
+        slateblue2: '#051441',
         lightpink: '#fdc8e0'
       }
     }
