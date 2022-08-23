@@ -59,7 +59,7 @@ export const Header = ({ currentPage }) => {
       </nav>
       <nav
         ref={navbar}
-        className="header-navbar p-3 absolute z-40 w-full bg-white shadow-xl"
+        className="header-navbar p-3 absolute z-40 w-full bg-white bg-opacity-95 shadow-xl"
       >
         <div className="container flex items-center mx-auto">
           <Link href="/">
