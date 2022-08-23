@@ -9,7 +9,7 @@ export const Tags = ({ tags }) => {
           return (
             <button
               key={tag}
-              className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:bg-pink rounded-md px-2 py-1 mx-1"
+              className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:border-pink hover:bg-pink rounded-md px-2 py-1 mx-1"
             >
               {tag}
             </button>

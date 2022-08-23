@@ -10,16 +10,16 @@ export const Share = () => {
     <div className="container flex flex-wrap sm:flex-nowrap place-content-start sm:place-content-end items-center">
       <h1 className="font-bold pb-2">Compartilhar:</h1>
       <div className="px-2">
-        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:bg-pink rounded-md px-2 py-1 mx-1">
+        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:border-pink hover:bg-pink rounded-md px-2 py-1 mx-1">
           <FaFacebook />
         </button>
-        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:bg-pink rounded-md px-2 py-1 mx-1">
+        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:border-pink hover:bg-pink rounded-md px-2 py-1 mx-1">
           <FaTwitter />
         </button>
-        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:bg-pink rounded-md px-2 py-1 mx-1">
+        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:border-pink hover:bg-pink rounded-md px-2 py-1 mx-1">
           <FaWhatsapp />
         </button>
-        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:bg-pink rounded-md px-2 py-1 mx-1">
+        <button className="transition-all duration-300 text-sm text-slate-500 font-base font-semibold border-2 border-slate-200 cursor-pointer hover:text-white hover:border-pink hover:bg-pink rounded-md px-2 py-1 mx-1">
           <FaLinkedin />
         </button>
       </div>

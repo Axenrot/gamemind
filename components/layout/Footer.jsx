@@ -22,7 +22,7 @@ const Footer = () => {
                 <span>Acompanhe nas redes:</span>
               </p>
               <div className="flex gap-6">
-                <div className="text-2x1 cursor-pointer hover:text-pink">
+                <div className="transition-all duration-300 cursor-pointer hover:text-pink">
                   <a
                     href="https://www.instagram.com/gamemindstudios/"
                     target="blank"
@@ -30,7 +30,7 @@ const Footer = () => {
                     <FaInstagram />
                   </a>
                 </div>
-                <div className="text-2x1 cursor-pointer hover:text-pink">
+                <div className="transition-all duration-300 cursor-pointer hover:text-pink">
                   <a
                     href="https://www.facebook.com/gamemindstudios"
                     target="blank"
@@ -39,14 +39,14 @@ const Footer = () => {
                   </a>
                 </div>
                 <div
-                  className="text-2x1 cursor-pointer hover:text-pink"
+                  className="transition-all duration-300 cursor-pointer hover:text-pink"
                   target="blank"
                 >
                   <a href="https://twitter.com/gamemindstudios" target="blank">
                     <FaTwitter />
                   </a>
                 </div>
-                <div className="text-2x1 cursor-pointer hover:text-pink">
+                <div className="transition-all duration-300 cursor-pointer hover:text-pink">
                   <a
                     href="https://www.linkedin.com/company/gamemindstudios/"
                     target="blank"
@@ -54,7 +54,7 @@ const Footer = () => {
                     <FaLinkedin />
                   </a>
                 </div>
-                <div className="text-2x1 cursor-pointer hover:text-pink">
+                <div className="transition-all duration-300 cursor-pointer hover:text-pink">
                   <a
                     href="https://www.youtube.com/channel/UC2cSWokWK75CddMPvV58B4g"
                     target="blank"
