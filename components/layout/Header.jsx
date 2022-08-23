@@ -9,19 +9,15 @@ export const Header = ({ currentPage }) => {
   gsap.registerPlugin(ScrollTrigger)
   const navbar = useRef()
   useEffect(() => {
-    gsap.fromTo(
-      navbar.current,
-      { y: -300, opacity: 0 },
-      {
-        scrollTrigger: {
-          start: '120px top',
-          toggleActions: 'play none none reverse'
-        },
-        y: 0,
-        opacity: 1,
-        position: 'fixed'
-      }
-    )
+    gsap.to(navbar.current, {
+      scrollTrigger: {
+        start: '120px top',
+        toggleActions: 'play none none reverse'
+      },
+      y: 0,
+      opacity: 1,
+      position: 'fixed'
+    })
   })
 
   return (
@@ -59,7 +55,7 @@ export const Header = ({ currentPage }) => {
       </nav>
       <nav
         ref={navbar}
-        className="header-navbar p-3 absolute z-40 w-full bg-white bg-opacity-95 shadow-xl"
+        className="header-navbar p-3 absolute z-40 w-full bg-white bg-opacity-95 shadow-xl -translate-y-[300px] opacity-0"
       >
         <div className="container flex items-center mx-auto">
           <Link href="/">
