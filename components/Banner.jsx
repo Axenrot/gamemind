@@ -8,15 +8,8 @@ export const Banner = ({ title, description, cta, imageURL }) => {
   const angle = useRef()
   const angle2 = useRef()
   const bigcircle = useRef()
-  const circlearm = useRef()
 
   gsap.registerPlugin(ScrollTrigger)
-
-  const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, {
-      backgroundColor: '#fff'
-    })
-  }
 
   useEffect(() => {
     gsap.to(angle.current, {
@@ -40,12 +33,12 @@ export const Banner = ({ title, description, cta, imageURL }) => {
   })
 
   useEffect(() => {
-    gsap.to(circlearm.current, {
+    gsap.to(bigcircle.current, {
       rotation: 360,
-      transformOrigin: 'left',
+      transformOrigin: '52% 52%',
       ease: Power0.easeNone,
       repeat: -1,
-      duration: 90
+      duration: 10
     })
   })
 
@@ -65,16 +58,10 @@ export const Banner = ({ title, description, cta, imageURL }) => {
           alt="image-banner"
           src="/images/angle-2.png"
         />
-        <div className="hidden w-[12vw] h-[12vw] absolute border-2 border-white rounded-full bottom-[-7vw] left-[35%]" />
         <div
-          ref={circlearm}
-          className="h-0 w-0 absolute -z-30 right-[45%] bottom-[0%]"
-        >
-          <div
-            ref={bigcircle}
-            className="relative  bg-white opacity-10 w-[80vw] h-[80vw] hidden md:block md:right-[40vw] lg:right-[40vw] lg:bottom-[40vh] md:bottom-[60vh] rounded-full"
-          />
-        </div>
+          ref={bigcircle}
+          className="absolute left-[20vw] top-[40vh] -z-30 bg-white opacity-10 w-[100vw] h-[100vw] hidden md:block md:right-[40vw] lg:right-[40vw] lg:bottom-[60vh] md:bottom-[60vh] rounded-full"
+        />
       </div>
       <div className="container flex md:flex-row flex-col justify-around md:justify-between items-center mx-auto">
         <div className="flex flex-row flex-wrap w-full sm:w-full md:w-1/2 lg:w-1/3 pt-10 box-border px-3.5 self-center text-center md:text-left justify-center md:justify-start">

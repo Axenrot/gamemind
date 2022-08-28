@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const About = ({ title, description, cta, imageURL }) => {
   return (
-    <div className="container mx-auto py-8 flex flex-col md:flex-row">
+    <div className="container mx-auto pb-8 flex flex-col md:flex-row">
       <div className="py-8 w-full md:w-5/12 px-3 text-center sm:text-start">
         <h1 className="text-slate-800 text-4xl font-semibold">{title}</h1>
         <p className="text-gray-500 my-6">{description}</p>

@@ -22,6 +22,10 @@
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
+
+  .avantasiabg {
+    background-image: linear-gradient(60deg, #000000 0%, #ffffff 100%);
+  }
 }
 
 .btn-outline {
