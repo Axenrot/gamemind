@@ -35,9 +35,9 @@ export const Avantasia = ({
         id="background"
         className="relative bg-purplebg left-[50%] -translate-x-[50%] h-fit w-[8000px] rounded-[50%] -z-20"
       >
-        <div className="w-[100vw] sm:container mx-auto py-8 px-3 flex flex-wrap flex-col md:flex-row w-full items-center text-center sm:text-start">
+        <div className="w-[100vw] sm:container mx-auto py-8 px-3 flex flex-wrap flex-col md:flex-row  items-center text-center sm:text-start">
           <div className="w-full">
-            <Reveal effect="zoom-in" duration={500}>
+            <Reveal effect="zoom-in">
               <div className="flex ml-auto justify-center self-center w-full lg:w-1/2  lg:float-left my-auto">
                 <img src={imageURL} alt="" />
                 <div

@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Tags = ({ tags }) => {
   return (
-    <div className="container flex flex-wrap sm:flex-nowrap place-content-start items-center py-4">
-      <h1 className="font-bold">Tags:</h1>
+    <div className="flex flex-wrap sm:flex-nowrap place-content-start items-center py-4">
+      <span className="font-bold">Tags:</span>
       <div className="px-2">
         {tags.map(tag => {
           return (

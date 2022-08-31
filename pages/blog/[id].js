@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import AuthorDescription from '../../components/AuthorDescription'
@@ -9,6 +8,7 @@ import { Tags } from '../../components/Tags'
 import Footer from '../../components/layout/Footer'
 import Header from '../../components/layout/Header'
 import Partners from '../../components/layout/Partners'
+import PostTitle from '../../components/PostTitle'
 
 const post = {
   id: 'como-gravar-e-disponibilizar-videoaulas-utilizando-o-canva',
@@ -35,53 +35,25 @@ const Post = () => {
   return (
     <div>
       <Header />
-      <div className="blog-post py-8 bg-pinkbutton w-full">
-        <div className="container flex sm:flex-row flex-col justify-between mx-auto px-3">
-          <div className="flex flex-row flex-wrap w-full sm:w-7/12 md:w-1/2 lg:w-1/3 pt-10 box-border px-3.5 self-center text-center sm:text-left justify-center sm:justify-start">
-            <Link href="/blog/tecnologia">
-              <a className="transition-all duration-300 text-white border-2 cursor-pointer hover:text-pink hover:border-white hover:bg-white font-base rounded-lg text-sm px-4 py-1 text-center mr-2 mb-2">
-                {post.category}
-              </a>
-            </Link>
-            <h1 className="text-white text-readTitle w-full font-bold pt-6 sm:pt-0">
-              {post.title}
-            </h1>
-            <div className="flex items-center space-x-4 pt-4">
-              <img
-                className="w-10 h-10 rounded-full"
-                src={post.author.avatar}
-                alt="author-img"
-              />
-              <div className="text-white text-sm">
-                <div>{post.author.name}</div>
-                <div className="text-white text-sm">
-                  {post.date} - {post.readingTime}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full sm:w-1/2 py-32">
-            <img
-              className="w-full rounded-md shadow-xl"
-              alt="image-banner-canva"
-              src={post.thumbnail}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="container mx-auto justify-center px-3 py-12">
+      <PostTitle
+        category={post.category}
+        title={post.title}
+        author={post.author}
+        date={post.date}
+        readingTime={post.readingTime}
+        thumbnail={post.thumbnail}
+      />
+      <div className="container mx-auto px-3 py-12">
         <div className="mb-8 text-center sm:text-start">{post.content}</div>
         <hr className="text-slate-200"></hr>
-        <div className="container flex flex-wrap">
+        <div className="flex flex-wrap justify-between pt-2">
           <Tags tags={post.tags} />
           <Share />
         </div>
-        <div className="pt-12">
-          <AuthorDescription
-            name={post.author.name}
-            description={post.author.description}
-          />
-        </div>
+        <AuthorDescription
+          name={post.author.name}
+          description={post.author.description}
+        />
       </div>
       <Partners />
       <Footer />

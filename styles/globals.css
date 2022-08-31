@@ -66,11 +66,11 @@
 }
 
 .fade-up {
-  animation: fadeInUp ease-out;
+  animation: fadeInUp 1s ease-out;
 }
 
 .fade-right {
-  animation: fadeInRight ease-out;
+  animation: fadeInRight 1s ease-out;
 }
 
 .btn-outline {
