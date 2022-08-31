@@ -37,7 +37,7 @@ export const Avantasia = ({
       >
         <div className="w-[100vw] sm:container mx-auto py-8 px-3 flex flex-wrap flex-col md:flex-row w-full items-center text-center sm:text-start">
           <div className="w-full">
-            <Reveal effect="zoom-in">
+            <Reveal effect="zoom-in" duration={500}>
               <div className="flex ml-auto justify-center self-center w-full lg:w-1/2  lg:float-left my-auto">
                 <img src={imageURL} alt="" />
                 <div
@@ -51,14 +51,17 @@ export const Avantasia = ({
                 </div>
               </div>{' '}
             </Reveal>
-            <Reveal effect="fade-up">
-              <div className="py-8 w-full text-center lg:w-5/12 lg:float-right">
+
+            <div className="py-8 w-full text-center lg:w-5/12 lg:float-right">
+              <Reveal effect="fade-up" duration={500}>
                 <h2 className="text-white text-3xl font-semibold">{title}</h2>
+              </Reveal>
+              <Reveal effect="fade-up">
                 <p className="text-white text-base my-6 tracking-wide leading-relaxed">
                   {description}
                 </p>
-              </div>
-            </Reveal>
+              </Reveal>
+            </div>
           </div>
           <div className="w-full">
             <Reveal effect="zoom-in">
@@ -66,14 +69,17 @@ export const Avantasia = ({
                 <img src={imageURL2} alt="" />
               </div>
             </Reveal>
-            <Reveal effect="fade-up">
-              <div className="py-8 w-full lg:w-5/12 lg:float-left">
+
+            <div className="py-8 w-full lg:w-5/12 lg:float-left">
+              <Reveal effect="fade-up" duration={500}>
                 <h1 className="text-white text-3xl font-semibold">{title2}</h1>
+              </Reveal>
+              <Reveal effect="fade-up">
                 <p className="text-white my-6 tracking-wide leading-relaxed">
                   {description2}
                 </p>
-              </div>
-            </Reveal>
+              </Reveal>
+            </div>
           </div>
         </div>
       </div>

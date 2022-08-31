@@ -62,19 +62,15 @@
 }
 
 .zoom-in {
-  animation: zoomIn 0.2s ease-out;
+  animation: zoomIn ease-out;
 }
 
 .fade-up {
-  animation: fadeInUp 0.2s ease-out;
-}
-.fade-up2 {
   animation: fadeInUp ease-out;
-  animation-duration: 3s;
 }
 
 .fade-right {
-  animation: fadeInRight 0.2s ease-out;
+  animation: fadeInRight ease-out;
 }
 
 .btn-outline {

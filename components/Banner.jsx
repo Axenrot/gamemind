@@ -65,20 +65,23 @@ export const Banner = ({ title, description, cta, imageURL }) => {
         />
       </div>
       <div className="container flex md:flex-row flex-col justify-around md:justify-between items-center mx-auto">
-        <Reveal effect="fade-up">
-          <div className="flex flex-row flex-wrap w-full sm:w-full md:w-1/2 lg:w-1/3 pt-10 box-border px-3.5 self-center text-center md:text-left justify-center md:justify-start">
+        <div className="flex flex-row flex-wrap w-full sm:w-full md:w-1/2 lg:w-1/3 pt-10 box-border px-3.5 self-center text-center md:text-left justify-center md:justify-start">
+          <Reveal effect="fade-up" duration={500}>
             <h1 className="text-white text-4xl w-full font-semibold pt-6 sm:pt-0">
               {title}
             </h1>
+          </Reveal>
+          <Reveal effect="fade-up">
             <p className="text-white pb-4 tracking-wide leading-relaxed">
               {description}
             </p>
             <Link href={cta.href} passHref>
               <a className="btn-outline">{cta.title}</a>
             </Link>
-          </div>
-        </Reveal>
-        <Reveal effect="fade-right">
+          </Reveal>
+        </div>
+
+        <Reveal effect="fade-right" duration={500}>
           <div className="w-full sm:w-4/5 md:w-3/5">
             <img className="w-full" alt="" src={imageURL} />
           </div>
