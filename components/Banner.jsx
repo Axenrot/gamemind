@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import gsap, { Power0 } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import Link from 'next/link'
+import Reveal from 'react-reveal/Reveal'
 
 export const Banner = ({ title, description, cta, imageURL }) => {
   const angle = useRef()
@@ -64,20 +65,24 @@ export const Banner = ({ title, description, cta, imageURL }) => {
         />
       </div>
       <div className="container flex md:flex-row flex-col justify-around md:justify-between items-center mx-auto">
-        <div className="flex flex-row flex-wrap w-full sm:w-full md:w-1/2 lg:w-1/3 pt-10 box-border px-3.5 self-center text-center md:text-left justify-center md:justify-start">
-          <h1 className="text-white text-4xl w-full font-semibold pt-6 sm:pt-0">
-            {title}
-          </h1>
-          <p className="text-white pb-4 tracking-wide leading-relaxed">
-            {description}
-          </p>
-          <Link href={cta.href} passHref>
-            <a className="btn-outline">{cta.title}</a>
-          </Link>
-        </div>
-        <div className="w-full sm:w-4/5 md:w-3/5">
-          <img className="w-full" alt="" src={imageURL} />
-        </div>
+        <Reveal effect="fade-up">
+          <div className="flex flex-row flex-wrap w-full sm:w-full md:w-1/2 lg:w-1/3 pt-10 box-border px-3.5 self-center text-center md:text-left justify-center md:justify-start">
+            <h1 className="text-white text-4xl w-full font-semibold pt-6 sm:pt-0">
+              {title}
+            </h1>
+            <p className="text-white pb-4 tracking-wide leading-relaxed">
+              {description}
+            </p>
+            <Link href={cta.href} passHref>
+              <a className="btn-outline">{cta.title}</a>
+            </Link>
+          </div>
+        </Reveal>
+        <Reveal effect="fade-right">
+          <div className="w-full sm:w-4/5 md:w-3/5">
+            <img className="w-full" alt="" src={imageURL} />
+          </div>
+        </Reveal>
       </div>
     </div>
   )

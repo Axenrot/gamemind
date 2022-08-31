@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Reveal from 'react-reveal/Reveal'
+
 import posts from '../public/posts'
 
 import BannerCard from './items/BannerCard'
@@ -22,25 +24,27 @@ export const BlogSection = ({ expand = false, title, description }) => {
 
   return (
     <div className="container px-3 mx-auto">
-      {!expand && indexTitle}
+      <Reveal effect="fade-up">{!expand && indexTitle}</Reveal>
 
-      <div className="flex flex-col sm:flex-row">
-        <div className="w-full sm:w-1/2 sm:pr-2">
-          <FeaturedPostCard />
+      <Reveal effect="fade-up">
+        <div className="flex flex-col sm:flex-row">
+          <div className="w-full sm:w-1/2 sm:pr-2">
+            <FeaturedPostCard />
+          </div>
+          <div className="flex flex-col w-full sm:w-1/2 sm:pl-2">
+            {posts3.map(post => (
+              <PostCard key={post.id} {...post} />
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col w-full sm:w-1/2 sm:pl-2">
-          {posts3.map(post => (
-            <PostCard key={post.id} {...post} />
-          ))}
+        <div className="flex flex-col sm:flex-row mb-8">
+          {expand &&
+            posts5.map(post => (
+              <PostCard expand={expand} key={post.id} {...post} />
+            ))}
+          {expand && <BannerCard />}
         </div>
-      </div>
-      <div className="flex flex-col sm:flex-row mb-8">
-        {expand &&
-          posts5.map(post => (
-            <PostCard expand={expand} key={post.id} {...post} />
-          ))}
-        {expand && <BannerCard />}
-      </div>
+      </Reveal>
     </div>
   )
 }
