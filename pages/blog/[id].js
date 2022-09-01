@@ -3,12 +3,12 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 import AuthorDescription from '../../components/AuthorDescription'
+import PostTitle from '../../components/PostTitle'
 import Share from '../../components/Share'
 import { Tags } from '../../components/Tags'
 import Footer from '../../components/layout/Footer'
 import Header from '../../components/layout/Header'
 import Partners from '../../components/layout/Partners'
-import PostTitle from '../../components/PostTitle'
 
 const post = {
   id: 'como-gravar-e-disponibilizar-videoaulas-utilizando-o-canva',
@@ -44,7 +44,13 @@ const Post = () => {
         thumbnail={post.thumbnail}
       />
       <div className="container mx-auto px-3 py-12">
-        <div className="mb-8 text-center sm:text-start">{post.content}</div>
+        <div className="flex">
+          <Share vertical={true} />
+          <div className="ml-3 sm:ml-16 mb-8 text-center sm:text-start">
+            {post.content}
+          </div>
+        </div>
+
         <hr className="text-slate-200"></hr>
         <div className="flex flex-wrap justify-between pt-2">
           <Tags tags={post.tags} />
